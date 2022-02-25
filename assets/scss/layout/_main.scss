@@ -1,0 +1,200 @@
+main{
+    section{
+        padding: 3rem 6rem;
+        text-align: center;
+
+        h2{
+            margin: 3rem 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+    #projet {
+        font-size: 1.5rem;
+
+        .btn {
+            text-decoration: none;
+            background-color: transparent;
+            border: 0.05rem solid $couleur-noir;
+            cursor: pointer;
+            display: inline-block;
+            margin: 3rem 0;
+            padding: calc(3rem/ 2) 6rem;
+            text-transform: uppercase;
+            color: #043440;
+            border-color: #043440;
+        }
+    }
+
+    #equipe {
+        background-color: $couleur-gris;
+
+        .grille {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+            margin: 3rem 0;
+
+            .item{
+                .contenu-item {
+                    width: 10rem;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .prenom {
+                        margin: calc(3rem / 2) 0;
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                    }
+                }
+                img {
+                    width: 10rem;
+                    border-radius: 50%;
+                    border: 0.05rem solid $couleur-primaire;
+                }
+            }
+        }
+
+    }
+
+    #temoignages {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        font-size: 1.5rem;
+        color: $couleur-blanc;
+        background-color: $couleur-primaire;
+
+        .media {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .contenu {
+            h2 {
+                margin: calc(3rem * 2) 0 0;
+            }
+
+            blockquote {
+                position: relative;
+                padding: 6rem;
+                font-style: italic;
+
+                &:before,
+                &:after{
+                    position: absolute;
+                    font-size: 8rem;
+                    content: '"';
+                }
+
+                &:before{
+                    top: 2rem;
+                    left: 3rem;
+                }
+                &:after{
+                    right: 3rem;
+                }
+            }
+        }
+    }
+
+    #contact {
+        background-color: $couleur-gris;
+
+        form {
+            padding: 0 6rem;     
+        
+            .grille_double {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 3rem;
+                margin: 3rem 0;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+
+                .form-label {
+                    order: 1;
+                    display: block;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.25rem;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: left;
+                }
+
+                .form-control {
+                    order: 2;
+                    padding: 1rem 1rem;
+                    width: 100%;
+                    box-sizing: border-box;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 1.25rem;
+                    color: $couleur-noir;
+                    background-color: $couleur-blanc;
+                    border: none;
+                }
+
+                textarea {
+                    min-width: 100%;
+                }
+
+                button[type="submit"] {
+                    display: inline-block;
+                    margin: auto;
+                    padding: 2rem 1rem 2rem 1rem;
+                    margin-top: 3rem;
+                    text-transform: uppercase;
+                    color:  $couleur-primaire;
+                    border-color:  $couleur-primaire;
+                    width: 15rem;
+                    text-align: center;
+                    color:  $couleur-primaire;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .infos {
+            padding: calc(3rem/ 2) 6rem 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            .info {
+                font-weight: 900;
+                vertical-align: baseline;
+
+                i {
+                    margin-right: 1.5rem;
+                    font-size: 2rem;
+                }
+
+                address {
+                    display: inline-block;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-size: 1.25rem;
+                    font-weight: 900;
+                    font-style: normal;
+                    text-align: left;
+                }
+                
+            }
+        }
+    }
+}

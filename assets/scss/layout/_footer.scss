@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 calc( 3rem / 2);
+    background-color: $couleur-blanc;
+
+    .liens {
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+        
+        ul {
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+        }
+
+        li a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $couleur-noir;
+            border-bottom: 0.05rem dashed transparent;
+        }
+    }
+    .barre {
+        margin: 0 0.5rem;
+    }
+}
